@@ -1,9 +1,10 @@
 .carousel-container{
+    
     display: flex;
     vertical-align: center;
     align-items: center;
     background-color:indigo;
-    padding: 50px 0 50px 0;
+    padding: 50px 0 50px 0; /* Top + Bottom */
 }
 
 .carousel-title{
@@ -11,13 +12,12 @@
     width: 40%;
     text-align: center;
     font-size: 50px;
-    padding: 0 100px 0 100px;
-
+    padding: 1 100px 1 100px;
 }
 
 .slide-container{
-    height: 80%;
-    border-radius:40px;
+    height: 65%; /* Card size */
+    border-radius:60px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -25,12 +25,12 @@
 
 .slide-container > img{
     object-fit: contain;
-    transition: all 0.2s ease-in-out; /* Mov effect */
+    transition: all 0.3s ease-in-out; /* Move time effect */
 }
 
-.slide-container:hover > img{ /* Mov effect */
-    transform: scale(1.2);
-    opacity: 0.7;
+.slide-container:hover > img{ /* Move time effect */
+    transform: scale(1.4);
+    opacity: 0.8;
 }
 
 .slide-desc{
@@ -47,8 +47,8 @@
 .slide-desc > span{
     color:  white;
     display: block;
-    font-size: 25px;
-    padding: 20px 00 20px 10px;
+    font-size: 30px;
+    padding: 20px 00 20px 10px; /* Tab of card title */
 
 }
 

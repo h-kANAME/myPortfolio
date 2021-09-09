@@ -24,7 +24,7 @@ const slidesInfo = [
 const slides = slidesInfo.map(slide => (
     
     <div className="slide-container">
-        <img src={slide.src} alt= {slide.alt}/>
+        <img src={slide.src} alt = {slide.alt}/>
         <div className="slide-desc">
             <span>{slide.desc}</span>
         </div>
