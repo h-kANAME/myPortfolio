@@ -8,30 +8,32 @@ import "./Slider.css";
 //https://brainhubeu.github.io/react-carousel/docs/examples/multipleSlides
 
 const Slider = () => {
+
     return (
+
         <div className="carousel-container">
             <div className="carousel-title">
-                <h2>Mis Proyectos</h2>
+                <h2>My Proyecs</h2>
             </div>
 
-            <Carousel
-                arrows
-                slidedesPerPage={3}
-                infinite
+            <Carousel autoPlay infiniteLoop
+                plugins={['arrows']}
+                // infinite
+
+                // slidedesPerPage={3}                
                 animationSpeed={200}
                 centered
-                offset={50}
-                itemWidth={400}
+                offset={150}
+                itemWidth={250}
                 slides={Slides} //Properties de Slides.js
-                breakpoints={{
-                    960: {
-                        sliderPerPage:1,
-                        arrows: false,
-                        itemWidth:250,
-                    },
-                }}
+            // breakpoints={{
+            //     960: {
+            //         sliderPerPage: 1,
+            //         arrows: false,
+            //         itemWidth: 250,
+            //     },
+            // }}
             />
-
         </div>
     )
 }

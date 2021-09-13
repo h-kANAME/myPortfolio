@@ -3,15 +3,15 @@ import "./About.css";
 
 const About = () => {
     return (
-        <div className="about-container">
+        <div className="about-container my-3">
             <div className="about-description">
-                <h3>Acerca de mi</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet,
-                    consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum
-                    dolor sit amet, consectetur adip</p>
+                <h3>About me</h3>
+                <p>I'm Emmanuel and i'm studing for will be a a system analist.</p>
+                <p>Currently i develop solutions and do design web pages tailored, in an independent way.</p>
             </div>
             <div className="about-img">
-                <img src="https://steamuserimages-a.akamaihd.net/ugc/1039715510741061360/700827A6B2092E690F44C82AD975BDC2A314727A/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="about" />
+                <img src="https://wallpapercave.com/wp/wp5791762.png"
+                    alt="about" width="650" height="400" />
             </div>
         </div>
     )
